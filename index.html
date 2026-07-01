@@ -1,41 +1,123 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>あなたのＨＰタイトル</title>
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A社 商品一覧・標準価格</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f7f8fa;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 28px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 12px;
+    }
+
+    p {
+      color: #666;
+      margin-bottom: 24px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 16px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 14px 16px;
+      text-align: left;
+    }
+
+    th {
+      background: #f0f2f5;
+      font-weight: 600;
+    }
+
+    td.price {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #777;
+    }
+  </style>
 </head>
 <body>
-<div id="outer">
-<header><div id="header-container"><div id="head-inner"><h1>あなたのＨＰタイトル</h1>
-<p class="description">あなたのＨＰの説明文</p></div></div>
-</header>
-<div id="content-wrapper">
-<main>
-<div id="inner">
-<h2>記事ページ見出し・大</h2>
-<p>文章あれこれ</p>
-<h3>記事ページ見出し・中</h3>
-<p>文章あれこれ</p>
-<h4>記事ページ見出し・小</h4>
-<p>文章あれこれ</p>
-</div>
-</main>
-<aside>
-<div id="middle-inner">
-<div class="side-title">menu</div>
-<div class="side">
-<ul>
-<li>記事ページへのリンク</li>
-<li>記事ページへのリンク</li>
-</ul>
-</div>
-</div>
-</aside>
-</div>
-<footer>© 2010 あなたのホームページ</footer>
-</div></body>
+  <div class="container">
+    <h1>A社 商品一覧・標準価格</h1>
+    <p>A社が提供する主な商品の一覧と標準価格です。</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>商品コード</th>
+          <th>商品名</th>
+          <th>カテゴリ</th>
+          <th>標準価格</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>A-001</td>
+          <td>ベーシックプラン</td>
+          <td>サービス</td>
+          <td class="price">¥50,000</td>
+        </tr>
+        <tr>
+          <td>A-002</td>
+          <td>スタンダードプラン</td>
+          <td>サービス</td>
+          <td class="price">¥120,000</td>
+        </tr>
+        <tr>
+          <td>A-003</td>
+          <td>プレミアムプラン</td>
+          <td>サービス</td>
+          <td class="price">¥250,000</td>
+        </tr>
+        <tr>
+          <td>A-101</td>
+          <td>初期設定サポート</td>
+          <td>導入支援</td>
+          <td class="price">¥80,000</td>
+        </tr>
+        <tr>
+          <td>A-102</td>
+          <td>運用サポート</td>
+          <td>保守</td>
+          <td class="price">¥30,000 / 月</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="note">
+      ※ 表示価格は標準価格です。個別条件により価格が異なる場合があります。
+    </div>
+  </div>
+</body>
 </html>
